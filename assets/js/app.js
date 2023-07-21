@@ -1,5 +1,5 @@
 $ = require('jquery')
 
 $(function() {
-    alert('charged');
+    console.log('charged');
 })
