@@ -1,0 +1,62 @@
+$color-black: #000000
+$color-grey: #323232
+$color-text-dark: #ffffff
+$color-text-grey: #9c9999
+$yellow: yellow
+
+/* font */
+$font-family: 'Montserrat'
+    
+body
+    background-color: $color-black
+    color: $color-text-dark
+    font-family: $font-family
+    
+
+nav
+    display: flex
+    justify-content: center
+    padding: 15px
+    width: 35%
+    a
+        text-decoration: none
+        color: $color-text-dark
+
+    li
+        text-align: center
+        min-width: 100px
+        list-style: none
+        color: $color-text-dark
+        padding: 10px 5px 0 5px
+        &.active
+            border-bottom: 2px solid $yellow
+    .navbar-brand
+        margin-top: auto
+        margin-bottom: auto
+        img
+            width: 80px
+            height: 80px
+    .nav-menu
+        margin-top: auto
+        margin-bottom: auto
+        padding: 5px
+        display: flex
+
+.avatar 
+    max-width: 150px
+    width: 100%
+    height: auto
+
+.infos 
+    margin-top: 30px
+    .name
+        font-size: 25px
+        padding: 0
+        margin: 0
+    .role
+        color: $color-text-grey
+
+.bg-grey 
+    background-color: $color-grey
+    &.container
+        padding: 10px
