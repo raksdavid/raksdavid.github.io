@@ -12,6 +12,7 @@
     "@fontsource/montserrat": "^5.0.5",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.1",
+    "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^5.5.3",
     "jquery": "^3.7.0"
   },

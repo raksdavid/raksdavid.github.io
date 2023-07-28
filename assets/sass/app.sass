@@ -2,7 +2,7 @@ $color-black: #000000
 $color-grey: #323232
 $color-text-dark: #ffffff
 $color-text-grey: #9c9999
-$yellow: yellow
+$color-yellow: yellow
 
 /* font */
 $font-family: 'Montserrat'
@@ -12,7 +12,6 @@ body
     color: $color-text-dark
     font-family: $font-family
     
-
 nav
     display: flex
     justify-content: center
@@ -28,8 +27,18 @@ nav
         list-style: none
         color: $color-text-dark
         padding: 10px 5px 0 5px
+        &:hover
+            border-bottom: 1px solid $color-grey
+            -webkit-transition: border-bottom 1s ease-out
+            -moz-transition: border-bottom 1s ease-out
+            -o-transition: border-bottom 1s ease-out
+            transition: border-bottom 1s ease-out
         &.active
-            border-bottom: 2px solid $yellow
+            border-bottom: 1px solid $color-yellow
+            -webkit-transition: border-bottom 1s ease-in-out
+            -moz-transition: border-bottom 1s ease-in-out
+            -o-transition: border-bottom 1s ease-in-out
+            transition: border-bottom 1s ease-in-out
     .navbar-brand
         margin-top: auto
         margin-bottom: auto
@@ -60,3 +69,32 @@ nav
     background-color: $color-grey
     &.container
         padding: 10px
+
+p
+    font-size: 14px
+
+.text-yellow
+    color: $color-yellow
+
+.details
+    padding: 30px 15px 15px 15px
+
+.hidden
+    display: none
+
+.content
+    padding: 0px 0px 0px 15px
+    &> div 
+        margin-bottom: 30px
+        &> div
+            height: 450px
+
+.quote
+    font-style: italic
+    padding-left: 15px
+    border-left: 1px solid white
+    display: block
+.author
+    font-style: italic
+    font-weight: bold
+    border-left: none !important
