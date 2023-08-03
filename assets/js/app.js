@@ -1,11 +1,16 @@
 import $ from 'jquery'
 
 import montserrat from '@fontsource/montserrat'
+import '/node_modules/font-awesome/scss/font-awesome.scss'
+import faicons from 'fa-icons'
 
-import '/node_modules/font-awesome/css/font-awesome.css'
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import '../sass/app.sass'
+
+import jstree from 'jstree'
+import '/node_modules/jstree/src/themes/default-dark/style.css'
+import '/node_modules/jstree/src/themes/default/style.css'
 
 $(function() { 
 
@@ -29,4 +34,18 @@ $(function() {
             }
         }
     })
-})
+
+    $('#technical-skills-tree').jstree({
+        icons     :true
+    }).on("changed.jstree", function (e, data) {
+        //console.log(data.instance.get_node(data.node, true))
+        let href = data.instance.get_node(data.node, true).attr('data-url')
+        window.open(href, '_blank')
+    })
+
+    $('.contact-me').on('click', function(ev) {
+        ev.preventDefault()
+
+        $('.nav-menu li[data-target="about-content"]').trigger('click')
+    })
+})($)

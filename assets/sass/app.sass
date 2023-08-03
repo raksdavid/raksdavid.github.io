@@ -12,14 +12,15 @@ body
     color: $color-text-dark
     font-family: $font-family
     
+a
+    text-decoration: none !important
+    color: $color-text-dark !important
+
 nav
     display: flex
     justify-content: center
     padding: 15px
     width: 35%
-    a
-        text-decoration: none
-        color: $color-text-dark
 
     li
         text-align: center
@@ -87,7 +88,7 @@ p
     &> div 
         margin-bottom: 30px
         &> div
-            height: 450px
+            min-height: 450px
 
 .quote
     font-style: italic
@@ -98,3 +99,24 @@ p
     font-style: italic
     font-weight: bold
     border-left: none !important
+
+.container
+    .container-caption
+        max-height: 50px
+
+.jstree-default 
+    .jstree-clicked, .jstree-hovered, .jstree-context
+        background: #999999
+        border-radius: 2px
+        box-shadow: inset 0 0 1px #cccccc
+        &:hover
+            background: #999999
+
+.contact-me
+    cursor: pointer
+
+.jstree-container-ul 
+    .jstree-node 
+        .jstree-children
+            margin-top: 5px
+            margin-bottom: 15px

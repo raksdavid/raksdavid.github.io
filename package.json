@@ -12,9 +12,11 @@
     "@fontsource/montserrat": "^5.0.5",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.1",
+    "fa-icons": "^0.2.0",
     "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^5.5.3",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "jstree": "^3.3.15"
   },
   "scripts": {
     "webpack": "webpack"
